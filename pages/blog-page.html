@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cf10c5d5b0.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <script src="../assets/blogs.js" defer></script>
+    <script src="../js/blog-view.js" defer></script>
+
+    <script src="../components/header.js" type="text/javascript" async></script>
+    <script src="../components/auth.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <div class="container">
+      <div class="row justify-content-center my-3" id="blog-page">
+        <div class="col-md-8 my-3">
+          <h1 id="blog-page-title"></h1>
+          <p id="blog-page-author"></p>
+          <p id="blog-page-desc" class="mt-5"></p>
+        </div>
+      </div>
+    </div>
+    <auth-modal></auth-modal>
+    <custom-footer></custom-footer>
+  </body>
+</html>

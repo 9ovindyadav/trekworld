@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cf10c5d5b0.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <script src="../assets/blogs.js" defer></script>
+    <script src="../js/app.js" defer></script>
+
+    <script src="../components/header.js" type="text/javascript" async></script>
+    <script src="../components/auth.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <div class="container">
+      <div class="row my-5 text-center">
+        <div class="col-12">
+          <h4 class="m-0">The blog</h4>
+          <h2>Writings from our team</h2>
+          <p>Our latest trek news, resources and gallery images.</p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="blog-hero"></div>
+        </div>
+      </div>
+
+      <div
+        class="row g-5 justify-content-center mb-5"
+        id="blogs-container"
+      ></div>
+    </div>
+    <auth-modal></auth-modal>
+    <custom-footer></custom-footer>
+  </body>
+</html>

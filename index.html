@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrekWorld</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="./js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cf10c5d5b0.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="./assets/gen-questions.js" defer></script>
+    <script src="./assets/treks.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <script src="./js/gen-que.js" defer></script>
+    <script src="./js/treks.js" defer></script>
+
+    <script src="./components/header.js" type="text/javascript" async></script>
+    <script src="./components/auth.js" type="text/javascript" defer></script>
+    <script src="./components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto text-center" id="home-text">
+            <h1>Never Stop Exploring</h1>
+            <p>
+              Embrace the endless journey, for in exploration lies the key to
+              unlocking life's boundless treasures.
+            </p>
+            <a class="hero-btn" href="register.html">Upcoming treks</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <h3 class="section-heading">Recent Treks</h3>
+          </div>
+
+          <div class="row g-5 m-0" id="trek-cards-container"></div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <h3 class="section-heading">General Questions</h3>
+          </div>
+          <div class="row accordion my-5" id="gen-questions-container"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container my-5">
+      <div class="row why-choose-us">
+        <div class="col-12 text-center">
+          <h2 class="text-white section-heading">Why choose TrekWorld</h2>
+        </div>
+        <div class="col-md-3 my-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex">
+                <i class="fa-solid fa-walkie-talkie"></i>
+                <h3 class="p-0 m-0">A Team That Will Keep You Safe</h3>
+              </div>
+              <p class="card-text">
+                For years, we have innovated and set safety standards in the
+                trekking industry. Our people, processes and equipment make
+                trekworld the safest trekking organisation in India.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3 class="p-0 m-0">Treks That Transform you</h3>
+              </div>
+              <p class="card-text">
+                Trekkers often call The trekworld Experience “life-changing.”
+                This is because through our treks, we consciously bring about a
+                transformative impact on your mind, body and spirit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex">
+                <i class="fa-solid fa-person"></i>
+                <h3 class="p-0 m-0">Treks That Make You Independent</h3>
+              </div>
+              <p class="card-text">
+                For years, we have innovated and set safety standards in the
+                trekking industry. Our people, processes and equipment make
+                trekworldmmm the safest trekking organisation in India.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 my-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+                <h3 class="p-0 m-0">A Chance To Trek Sustainably</h3>
+              </div>
+              <p class="card-text">
+                Green Trails is our promise to leave the mountains better. When
+                you trek with us, you learn how to become carbon negative in
+                your own life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-white text-center">
+            <span class="text-danger">/</span> Reviews
+          </h2>
+        </div>
+
+        <div id="carousel-gallery" class="carousel slide my-5">
+          <div class="col-md-6 m-auto">
+            <div class="carousel-inner" id="reviews-container">
+              <div class="carousel-item active">
+                <div
+                  class="card text-center m-auto bg-transparent border-0"
+                  id="reviewer-card"
+                >
+                  <div class="card-body">
+                    <div class="reviewer-img-con">
+                      <img src="./assets/images/govind.jpg" alt="" />
+                    </div>
+                    <h3>Govind yadav</h3>
+                    <p>Web developer</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Libero ab nam in esse aliquid reprehenderit amet, eum,
+                      iusto voluptatum assumenda!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card text-center m-auto bg-transparent border-0"
+                  id="reviewer-card"
+                >
+                  <div class="card-body">
+                    <div class="reviewer-img-con">
+                      <img src="./assets/images/brad-pitt.jpeg" alt="" />
+                    </div>
+                    <h3>Brad Pitt</h3>
+                    <p>Actor</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Libero ab nam in esse aliquid reprehenderit amet, eum,
+                      iusto voluptatum assumenda!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card text-center m-auto bg-transparent border-0"
+                  id="reviewer-card"
+                >
+                  <div class="card-body">
+                    <div class="reviewer-img-con">
+                      <img src="./assets/images/priyanka.jpeg" alt="" />
+                    </div>
+                    <h3>Priyanka Chopra</h3>
+                    <p>Actor</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Libero ab nam in esse aliquid reprehenderit amet, eum,
+                      iusto voluptatum assumenda!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card text-center m-auto bg-transparent border-0"
+                  id="reviewer-card"
+                >
+                  <div class="card-body">
+                    <div class="reviewer-img-con">
+                      <img src="./assets/images/alia.jpeg" alt="" />
+                    </div>
+                    <h3>Alia Bhatt</h3>
+                    <p>Actor</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Libero ab nam in esse aliquid reprehenderit amet, eum,
+                      iusto voluptatum assumenda!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="card text-center m-auto bg-transparent border-0"
+                  id="reviewer-card"
+                >
+                  <div class="card-body">
+                    <div class="reviewer-img-con">
+                      <img src="./assets/images/deepika.jpeg" alt="" />
+                    </div>
+                    <h3>Deepika padukone</h3>
+                    <p>Actor</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Libero ab nam in esse aliquid reprehenderit amet, eum,
+                      iusto voluptatum assumenda!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-gallery"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-gallery"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <auth-modal></auth-modal>
+    <custom-footer></custom-footer>
+    <a class="scroll-link top-link" href="#">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>

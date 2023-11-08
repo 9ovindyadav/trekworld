@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gears</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cf10c5d5b0.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <script src="../assets/gears.js" defer></script>
+    <script src="../js/gears.js" defer></script>
+
+    <script src="../components/header.js" type="text/javascript" async></script>
+    <script src="../components/auth.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 my-5">
+          <h1>Rent Gears in 4 easy steps</h1>
+          <div class="row rent-steps">
+            <div class="col">
+              <h2>1</h2>
+              <h2>Register / login</h2>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="col">
+              <h2>2</h2>
+              <h2>Select product</h2>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="col">
+              <h2>3</h2>
+              <h2>Pay and book</h2>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="col">
+              <h2>4</h2>
+              <h2>Pickup at trek</h2>
+            </div>
+          </div>
+
+          <div class="col-12 my-5">
+            <h1>Choose your rental gears</h1>
+            <div class="row" id="gears-card-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <auth-modal></auth-modal>
+    <custom-footer></custom-footer>
+  </body>
+</html>

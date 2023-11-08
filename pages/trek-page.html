@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trek detail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <script src="../js/bootstrap.bundle.js" defer></script>
+
+    <!-- Fontawesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cf10c5d5b0.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+
+    <!-- Custom CSS and JS -->
+    <link rel="stylesheet" href="../css/app.css" />
+    <script src="../assets/treks.js" defer></script>
+    <script src="../js/trek-view.js" defer></script>
+
+    <script src="../components/header.js" type="text/javascript" async></script>
+    <script src="../components/auth.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <custom-header></custom-header>
+    <div class="container">
+      <div class="row justify-content-center" id="trek-page">
+        <div class="col-md-8 my-5">
+          <p id="trek-page-desc"></p>
+          <p id="trek-page-author"></p>
+        </div>
+      </div>
+    </div>
+    <auth-modal></auth-modal>
+    <custom-footer></custom-footer>
+  </body>
+</html>
